@@ -152,8 +152,8 @@ body {
 .Home-content-p-a:hover {
   color: white;
   text-decoration: none;
-  -webkit-animation: gottaCatch 1200ms ease infinite forwards;
-          animation: gottaCatch 1200ms ease infinite forwards;
+  -webkit-animation: gottaCatch 1200ms ease 1 forwards;
+          animation: gottaCatch 1200ms ease 1 forwards;
 }
 
 @-webkit-keyframes gottaCatch {
@@ -215,6 +215,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
 }
 
 .Brands-content {
@@ -224,7 +225,6 @@ body {
   background-position: center;
   width: 80%;
   height: 100px;
-  padding: 10px 0;
 }
 
 .Find {
@@ -294,11 +294,12 @@ body {
 }
 
 .Links {
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .Links-content {
-  margin: 65px 0;
+  margin: 50px 0;
 }
 
 .Links-content-ul-li {
@@ -330,8 +331,8 @@ body {
 }
 
 .Links-content-ul-li-a-i {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,6 +342,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 32px;
 }
 
 .Links-content-ul-li-a:hover {
