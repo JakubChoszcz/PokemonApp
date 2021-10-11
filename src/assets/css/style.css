@@ -73,6 +73,8 @@ body {
   background-color: white;
   border-radius: 10px;
   min-width: 90px;
+  width: 100%;
+  max-width: 358px;
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,10 +105,28 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Home-img {
+  max-width: 100%;
 }
 
 .Home-content {
   padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Home-content-h1 {
@@ -132,6 +152,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  max-width: 512px;
   border-radius: 15px;
   border: 3px solid black;
   display: -webkit-box;
@@ -223,7 +244,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 80%;
   height: 100px;
 }
 
@@ -278,6 +298,10 @@ body {
 
 .Find-content-result-ul-li {
   margin: 30px 0;
+}
+
+.Find-img {
+  width: 100%;
 }
 
 .Author {
@@ -387,5 +411,82 @@ body {
 .Footer-content-p-a:hover {
   color: white;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .Header-content-img {
+    width: 92px;
+  }
+  .Header-content-p {
+    font-size: 72px;
+  }
+  .Navbar-content {
+    padding: 10px 0;
+  }
+  .Navbar-content-ul-li-a {
+    font-size: 48px;
+    width: 220px;
+    padding: 40px 0;
+  }
+  .Home {
+    padding: 40px 0;
+    background: linear-gradient(30deg, #FED521 0%, #FED521 20%, #FFFFFF 20%, #FFFFFF 100%);
+  }
+  .Home-img {
+    max-height: 50vh;
+    margin: 40px 0;
+  }
+  .Home-content-h1 {
+    font-size: 48px;
+    line-height: 4rem;
+  }
+  .Home-content-p-a {
+    font-size: 24px;
+  }
+  .About-content-p {
+    font-size: 24px;
+    margin: 70px 0;
+  }
+  .Quote-content {
+    padding: 80px 0;
+  }
+  .Quote-content-p {
+    font-size: 24px;
+  }
+  .Find-content {
+    padding: 80px 0;
+  }
+  .Find-content-form-input {
+    font-size: 22px;
+  }
+  .Find-content-result-ul-li {
+    font-size: 24px;
+  }
+  .Author-content {
+    padding: 80px 0;
+  }
+  .Author-content-p {
+    font-size: 48px;
+  }
+  .Links-content {
+    margin: 70px 0;
+  }
+  .Links-content-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Links-content-ul-li {
+    max-width: 184px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

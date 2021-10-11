@@ -35,8 +35,10 @@ class App extends React.Component {
                 <div className="Home">
                     <div className="container">
                         <div className="row">
-                            <div className="col-1"></div>
-                            <div className="col-10 Home-content">
+                            <div className="col-1 col-md-6 d-flex align-items-center justify-content-center">
+                                <img src={ images.pikatchu1 } alt="Welcoming Pikatchu" className='d-none d-md-block Home-img' />
+                            </div>
+                            <div className="col-10 col-md-6 Home-content">
                                 <h1 className="Home-content-h1">
                                     <span className="Home-content-h1-span">Hi</span>, let me <br/>
                                     introduce <span className="Home-content-h1-span">You</span> <br/>
@@ -53,7 +55,7 @@ class App extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-1"></div>
-                            <div className="col-10 About-content">
+                            <div className="col-10 col-md-7 About-content">
                                 <p className="About-content-p">There are already quite a few 'catch all' places on the internet,  so you're probably thinking 'why did you make this site?' Honestly, I just wanted to enjoy and improve my programming skills by creating a project from scratch, finding problems and solving them, by doing it I can learn a lot more new things. So I created a new project in Figma, designed the entire page and just coded it ... At the bottom of this section, I published a list of technologies used to create the Pokemon application. Hope you enjoy it and find your Dragonite.</p>
                             </div>
                         </div>
@@ -71,13 +73,20 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="Brands">
-                    <div className="Brands-content"></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-1"></div>
+                            <div className="col-10">
+                                <div className="Brands-content"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="Find">
                     <div className="container">
                         <div className="row">
                             <div className="col-1"></div>
-                            <div className="col-10 Find-content">
+                            <div className="col-10 col-md-5 Find-content">
                                 <form onSubmit={() => console.log('onSubmit')}>
                                     <div className="Find-content-form">
                                         <div className="ButtonIn">
@@ -102,6 +111,12 @@ class App extends React.Component {
                                         <li className="Find-content-result-ul-li">Weight: 54</li>
                                     </ul>
                                 </div>
+                            
+                            
+                            
+                            </div>
+                            <div className="col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                <img src={ images.pikachu2 } alt="Poiting Pikatchu" className='Find-img' />
                             </div>
                         </div>
                     </div>
@@ -109,8 +124,8 @@ class App extends React.Component {
                 <div className="Author">
                     <div className="container">
                         <div className="row">
-                            <div className="col-1"></div>
-                            <div className="col-10 Author-content">
+                            <div className="col-1 col-md-2"></div>
+                            <div className="col-10 col-md-8 Author-content">
                                 <p className="Author-content-p"><span className="Author-span">Hey</span>, I am bla... bla...<br/> Just check my socials <br/>if <span className="Author-span">You</span> want</p>
                             </div>
                         </div>
