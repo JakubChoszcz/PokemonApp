@@ -1,4 +1,5 @@
 import React from 'react';
+import Find from './components/Find';
 import images from './assets/images/images';
 
 class App extends React.Component {
@@ -15,19 +16,19 @@ class App extends React.Component {
                         <div className="Navbar-content">
                             <ul className="Navbar-content-ul">
                                 <li className="Navbar-content-ul-li">
-                                    <a href="#!" className='Navbar-content-ul-li-a'>
+                                    <a href="#About" className='Navbar-content-ul-li-a'>
                                         <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         About
                                     </a>
                                 </li>
                                 <li className="Navbar-content-ul-li">
-                                    <a href="#!" className='Navbar-content-ul-li-a'>
+                                    <a href="#Find" className='Navbar-content-ul-li-a'>
                                         <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         Find
                                     </a>
                                 </li>
                                 <li className="Navbar-content-ul-li">
-                                    <a href="#!" className='Navbar-content-ul-li-a'>
+                                    <a href="#Author" className='Navbar-content-ul-li-a'>
                                         <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         Author
                                     </a>
@@ -48,13 +49,13 @@ class App extends React.Component {
                                     my friends!
                                 </h1>
                                 <p className="Home-content-p">
-                                    <a href="#!" className="Home-content-p-a">Gotta Catch 'Em All</a>
+                                    <a href="#Find" className="Home-content-p-a">Gotta Catch 'Em All</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="About">
+                <div className="About" id="About">
                     <div className="container">
                         <div className="row">
                             <div className="col-1"></div>
@@ -85,46 +86,18 @@ class App extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="Find">
+                <div className="Find" id='Find'>
                     <div className="container">
                         <div className="row">
                             <div className="col-1"></div>
-                            <div className="col-10 col-md-5 Find-content">
-                                <form onSubmit={() => console.log('onSubmit')}>
-                                    <div className="Find-content-form">
-                                        <div className="ButtonIn">
-                                            <input 
-                                                type="text" 
-                                                className="Find-content-form-input"
-                                                placeholder="Search by name" 
-                                            />
-                                            <button type='submit' className="Find-content-form-button">
-                                                <i className="fas fa-search Find-content-form-button-i"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div className="Find-content-result">
-                                    <ul className="Find-content-result-ul">
-                                        <li className="Find-content-result-ul-li">Name: Oddish</li>
-                                        <li className="Find-content-result-ul-li">Base expreience: 64</li>
-                                        <li className="Find-content-result-ul-li">Forms: oddish</li>
-                                        <li className="Find-content-result-ul-li">Abilities: chlorophyll, run-away</li>
-                                        <li className="Find-content-result-ul-li">Height: 5</li>
-                                        <li className="Find-content-result-ul-li">Weight: 54</li>
-                                    </ul>
-                                </div>
-                            
-                            
-                            
-                            </div>
+                            <Find />
                             <div className="col-md-6 d-none d-md-flex align-items-center justify-content-center">
                                 <img src={ images.pikachu2 } alt="Poiting Pikatchu" className='Find-img' />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="Author">
+                <div className="Author" id='Author'>
                     <div className="container">
                         <div className="row">
                             <div className="col-1 col-md-2"></div>
@@ -141,37 +114,37 @@ class App extends React.Component {
                             <div className="col-8 Links-content">
                                 <ul className="Links-content-ul">
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="https://www.facebook.com/kuba.choszcz.5/" target='_blank' rel='noreferrer' className='Links-content-ul-li-a'>
                                             Facebook
                                             <i className="fab fa-facebook Links-content-ul-li-a-i"></i>
                                         </a>
                                     </li>
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="https://www.instagram.com/j_kuboszczyk/" target='_blank' rel='noreferrer' className='Links-content-ul-li-a'>
                                             Instagram
                                             <i className="fab fa-instagram Links-content-ul-li-a-i"></i>
                                         </a>
                                     </li>
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="https://github.com/JakubChoszcz" target='_blank' rel='noreferrer' className='Links-content-ul-li-a'>
                                             Github
                                             <i className="fab fa-github Links-content-ul-li-a-i"></i>
                                         </a>
                                     </li>
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="https://www.youtube.com/channel/UCe0tQXHZtPj3C-A36phIe8A" target='_blank' rel='noreferrer' className='Links-content-ul-li-a'>
                                             YouTube
                                             <i className="fab fa-youtube Links-content-ul-li-a-i"></i>
                                         </a>
                                     </li>
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="https://www.linkedin.com/in/jakub-choszcz-0b0323213/" target='_blank' rel='noreferrer' className='Links-content-ul-li-a'>
                                             LinkedIn
                                             <i className="fab fa-linkedin Links-content-ul-li-a-i"></i>
                                         </a>
                                     </li>
                                     <li className="Links-content-ul-li">
-                                        <a href="#!" className='Links-content-ul-li-a'>
+                                        <a href="mailto:jakub.choszcz@gmail.com" className='Links-content-ul-li-a'>
                                             Gmail
                                             <i className="fab fa-google Links-content-ul-li-a-i"></i>
                                         </a>
@@ -183,7 +156,7 @@ class App extends React.Component {
                 </div>
                 <div className="Footer">
                     <div className="Footer-content">
-                        <p className="Footer-content-p">Copyright &copy; 2021 PokemonApp.<br/>Designed & Created By <a href="#!" className='Footer-content-p-a'>Choszcz</a></p>
+                        <p className="Footer-content-p">Copyright &copy; 2021 PokemonApp.<br/>Designed & Created By <a href="https://github.com/JakubChoszcz" target='_blank' rel="noreferrer" className='Footer-content-p-a'>Choszcz</a></p>
                     </div>
                 </div>
             </>

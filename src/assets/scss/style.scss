@@ -2,6 +2,10 @@
 @import './variables';
 @import './functions';
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: fontSize(mobile-m);
@@ -137,9 +141,9 @@ body {
 
 .About {
     background-color: colors(primaryLight-gray);
+    padding: 75px 0;
 
     &-content {
-        padding: 60px 0;
 
         &-p {
             margin: 0;
@@ -177,9 +181,9 @@ body {
 
 .Find {
     background: linear-gradient(325deg, #FED521 0%, #FED521 31.23%, #FFFFFF 31.24%, #FFFFFF 67.38%);
+    padding: 75px 0;
 
     &-content {
-        margin: 50px 0;
 
         &-form {
 
@@ -224,6 +228,7 @@ body {
         }
 
         &-result {
+            // display: none;
             &-ul {
                 &-li {
                     margin: 30px 0;
@@ -238,11 +243,11 @@ body {
 }
 
 .Author {
-    padding: 65px 0;
     font-size: fontSize(mobile-x);
     font-weight: bold;
     background-color: colors(primaryLight-gray);
     text-align: left;
+    padding: 75px 0;
 
     &-span {
         color: colors(primaryYellow);
@@ -349,10 +354,8 @@ body {
             max-height: 50vh;
             margin: 40px 0;
             animation: left-to-right 600ms ease-in 400ms 1 forwards;
-            // opacity: 0;
             position: relative;
-            left: -3rem;
-            top: -2rem;
+            left: -2rem;
             opacity: 0;
         }
 
@@ -362,8 +365,9 @@ body {
                 line-height: 4rem;
                 animation: right-to-left 600ms ease-in 800ms 1 forwards;
                 position: relative;
-                right: -3rem;
+                right: -2rem;
                 opacity: 0;
+                width: fit-content;
             }
 
             &-p-a {
@@ -390,17 +394,7 @@ body {
         }
     }
 
-    .Brands-content {
-    }
-
     .Find {
-        &-img {
-            animation: right-to-left 600ms ease-in 400ms 1 forwards;
-            position: relative;
-            right: -3rem;
-            opacity: 0;
-        }
-
         &-content {
             padding: 80px 0;
             &-form {
@@ -413,6 +407,15 @@ body {
                 font-size: fontSize(tablet-m);
             }
         }
+
+        &-img {
+            animation: right-to-left 600ms ease-in 400ms 1 forwards;
+            position: relative;
+            right: -2rem;
+            opacity: 0;
+            max-width: 420px;
+        }
+
     }
 
     .Author-content {
