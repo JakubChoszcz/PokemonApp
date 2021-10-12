@@ -16,16 +16,19 @@ class App extends React.Component {
                             <ul className="Navbar-content-ul">
                                 <li className="Navbar-content-ul-li">
                                     <a href="#!" className='Navbar-content-ul-li-a'>
+                                        <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         About
                                     </a>
                                 </li>
                                 <li className="Navbar-content-ul-li">
                                     <a href="#!" className='Navbar-content-ul-li-a'>
+                                        <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         Find
                                     </a>
                                 </li>
                                 <li className="Navbar-content-ul-li">
                                     <a href="#!" className='Navbar-content-ul-li-a'>
+                                        <img src={ images.logoIcon } alt="Pokemon App Icon" className='d-none d-xl-block Navbar-content-ul-li-a-img'/>
                                         Author
                                     </a>
                                 </li>
@@ -180,7 +183,7 @@ class App extends React.Component {
                 </div>
                 <div className="Footer">
                     <div className="Footer-content">
-                        <p className="Footer-content-p">Copyright &copy; 2021 PokemonApp.<br/>Designed & Created By a <a href="#!" className='Footer-content-p-a'>Choszcz</a></p>
+                        <p className="Footer-content-p">Copyright &copy; 2021 PokemonApp.<br/>Designed & Created By <a href="#!" className='Footer-content-p-a'>Choszcz</a></p>
                     </div>
                 </div>
             </>
