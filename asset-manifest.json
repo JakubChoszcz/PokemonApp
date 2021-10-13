@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/PokemonApp/static/css/main.256f30f7.chunk.css",
+    "main.js": "/PokemonApp/static/js/main.d22d3781.chunk.js",
+    "main.js.map": "/PokemonApp/static/js/main.d22d3781.chunk.js.map",
+    "runtime-main.js": "/PokemonApp/static/js/runtime-main.e7ce4198.js",
+    "runtime-main.js.map": "/PokemonApp/static/js/runtime-main.e7ce4198.js.map",
+    "static/js/2.6e5255f7.chunk.js": "/PokemonApp/static/js/2.6e5255f7.chunk.js",
+    "static/js/2.6e5255f7.chunk.js.map": "/PokemonApp/static/js/2.6e5255f7.chunk.js.map",
+    "index.html": "/PokemonApp/index.html",
+    "static/css/main.256f30f7.chunk.css.map": "/PokemonApp/static/css/main.256f30f7.chunk.css.map",
+    "static/js/2.6e5255f7.chunk.js.LICENSE.txt": "/PokemonApp/static/js/2.6e5255f7.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/PokemonApp/static/media/logo.9b42ce6e.png",
+    "static/media/pikachu2.png": "/PokemonApp/static/media/pikachu2.4047e9e8.png",
+    "static/media/pikatchu1.png": "/PokemonApp/static/media/pikatchu1.db974fad.png",
+    "static/media/style.css": "/PokemonApp/static/media/tech-brands.695a1720.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7ce4198.js",
+    "static/js/2.6e5255f7.chunk.js",
+    "static/css/main.256f30f7.chunk.css",
+    "static/js/main.d22d3781.chunk.js"
+  ]
+}
